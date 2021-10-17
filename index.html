@@ -18,6 +18,24 @@
             box-shadow: 20px 20px 20px rgba(250, 233, 1, 0.15);
             transition: box-shadow 0.1s ease-in-out;
         }
+        #cyberpunkLogo {
+            width: 280px;
+            position: absolute;
+            top: 21%;
+            left: 13%;
+        }
+        #addToCartButtonGroup {
+            position: absolute;
+            right: 0;
+            left: 66%;
+            top: 76%;
+            font-weight:bolder;
+        }
+        #addToCartButtonGroup span {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bolder;
+        }
         .container .btn:hover{
             color: purple;
             font-size: medium;
@@ -39,8 +57,6 @@
             float: left;
             padding: 20px;
         }
-
-
         .featured-child1 {
             width: 50%;
             float: left;
@@ -57,15 +73,59 @@
             width: 50%;
             float:left;
             padding-left: -200px;
-            padding-top: 405px;
+            padding-top: 405px;   
+        }
+        .col-lg-4 {
+            flex: 0 0 33.333333%;
+            max-width: 47%;
+        }
+        .floatFoot-container {
+            
+            padding: 20px;
+        }
+
+        .floatFoot-child1 {
+            width: 90%;
+            float: left;
+            padding: 20px;
             
             
         }
-        .col-lg-4 {
-        
-        flex: 0 0 33.333333%;
-        max-width: 47%;
-    }
+        .floatFoot-child2 {
+            width: 10%;
+            float: left;
+            padding: 20px;
+            
+        }
+        #footer{
+            background-color: rgb(41, 40, 40);
+        }
+        #gogGalaxyFooter, #cdprojektLogo {
+    max-width: 40%;
+    max-width: 40%;
+}
+
+#footer-top, #footer-middle, #footer-bottom {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: rgb(68, 68, 68);
+    color: #aaaaaa;
+    font-size: 0.8rem;
+}
+
+footer a {
+    color: #aaaaaa;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+footer a.active {
+    color: rgb(240, 71, 240);
+    font-weight: bolder;
+}
     </style>
 </head>
 <body>
@@ -182,10 +242,17 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="/gog-assets/carousel6.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>My Caption Title (1st Image)</h5>
-                        <p>The whole caption will only show up if the screen is at least medium size.</p>
+                    <img id="main-carousel-image" src="/gog-assets/carousel6.jpg" class="d-block w-100 img-fluid"
+                        alt="...">
+                    <img id="cyberpunkLogo" src="cyberpunklogoblack.png" alt="">
+                        <i class="bi bi-windows ml-2"></i>
+                    <div id="addToCartButtonGroup">
+                        <span class="mr-4" style="width: 50px; background-color: purple; color: white; border-radius: 0px;">-60%</span>
+                        <span class="mr-2">$100.19</span>
+                        <button class="btn-sm btn-success">
+                            <i class="bi bi-cart-plus mr-1"></i>
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -195,13 +262,13 @@
                     <img class="d-block w-100" src="/gog-assets/carousel3.jpg" alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/gog-assets/carousel6.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="/gog-assets/carousel2.jpg" alt="Third slide">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="/gog-assets/carousel5.jpg" alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/gog-assets/carousel6.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="/gog-assets/carousel1.jpg" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="position: absolute; left: -120px;">
@@ -1086,7 +1153,7 @@
                           </div>
                           <div class="col-sm col-lg-3">
                             <div class="card" style="width: 16rem;">
-                                <img src="/gog-assets/tile (27).jpg" class="card-img-top" alt="...">
+                                <img src="/gog-assets/tile (37).jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <p class="card-text">Beat Cop</p>
                                   <span>
@@ -1244,7 +1311,7 @@
                           </div>
                           <div class="col-sm col-lg-3">
                             <div class="card" style="width: 16rem;">
-                                <img src="/gog-assets/tile (27).jpg" class="card-img-top" alt="...">
+                                <img src="/gog-assets/tile (37).jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <p class="card-text">Beat Cop</p>
                                   <span>
@@ -1415,7 +1482,7 @@
               <div class="col">
                 <div class="card " style="width: 25rem; height: 25rem;">
                     <div class="card-body">
-                      <img src="/gog-assets/carousel5.jpg" style="object-fit: cover; width: 25rem; height: 25rem; position: absolute; left: 0; top: 0;" alt="">
+                      <img src="st.png" style="object-fit: cover; width: 25rem; height: 25rem; position: absolute; left: 0; top: 0;" alt="">
                     </div>
                   </div>
               </div>
@@ -1555,7 +1622,7 @@
                               </div>
                               <div class="col-sm col-lg-3">
                                 <div class="card" style="width: 16rem;">
-                                    <img src="/gog-assets/tile (27).jpg" class="card-img-top" alt="...">
+                                    <img src="/gog-assets/tile (30).jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                       <p class="card-text">Beat Cop</p>
                                       <span>
@@ -1705,33 +1772,76 @@
         </div>
     <br>
     <br>
-    <!-- <div class="container" style="position: relative;"> -->
-        <!-- <img src="/gog-assets/tile (24).jpg"  style="position: absolute;"  class="bilal" alt="...">
-        <p style="position: absolute; top: 185px; left: 32px; color: white; font-size:large; font-weight: bolder;">Releases: <strong>Disaster 4: Summer Memories</strong>
-        </p>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-chat-fill" style="position: absolute; top:235px; left:32px; fill: white;" viewBox="0 0 16 16">
-                <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
-            </svg>
-            <p style="position: absolute; color: whitesmoke; top:233px; left: 62px; font-weight: bolder;">42</p>
-            <p style="position: absolute; color: whitesmoke; top:233px; left: 420px; font-weight: bolder;">18 hours ago</p>
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div id="footer-top" class="container mt-5">
+                <div class="row mb-4">
+                    <div id="top-links-footer" class="col-8" >
+                        <a class="text-white" href="#" style="color: #aaaaaa !important; font-weight: bolder; font-size:small;">Redeem code</a>
+                        <a class="text-white" href="#" style="color: #aaaaaa !important; font-weight: bolder; font-size:small;">Reclaim your game</a>
+                        <a class="text-white" href="#" style="color: #aaaaaa !important; font-weight: bolder; font-size:small;">GOG Connect</a>
+                        <a class="text-white" href="#" style="color: #aaaaaa !important; font-weight: bolder; font-size:small;">Contact us</a>
+                        <a class="text-white" href="#" style="color: #aaaaaa !important; font-weight: bolder; font-size:small;">Career opportunities</a>
+                        <a class="text-white" href="#" style="color: #aaaaaa !important; font-weight: bolder; font-size:small;">Submit your game</a>
+                    </div>
+                    <div class="col-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook pl-1 ml-2" style="fill:rgb(179, 172, 172)" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter pl-1 ml-2" style="fill:rgb(179, 172, 172);" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitch pl-1 ml-2" style="fill:rgb(179, 172, 172)" viewBox="0 0 16 16">
+                            <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+                            <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
-    <!-- <div class="container" style="position: relative;">
-        <img src="/gog-assets/tile (27).jpg"  style="position: absolute; width: 250px; height: 264px; object-fit: none;"  class="bilal" alt="...">
-        <p style="position: absolute; top: 185px; left: 32px; color: white; font-size:large; font-weight: bolder;">Releases: <strong>Disaster 4: Summer Memories</strong>
-        </p>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-chat-fill" style="position: absolute; top:235px; left:32px; fill: white; object-fit:cover;" viewBox="0 0 16 16">
-                <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
-            </svg>
-            <p style="position: absolute; color: whitesmoke; top:233px; left: 62px; font-weight: bolder;">42</p>
-            <p style="position: absolute; color: whitesmoke; top:233px; left: 420px; font-weight: bolder;">18 hours ago</p>
+        <div class="container-fluid footer-middle-fluid">
+            <div id="footer-middle" class="container mb-4">
+                <div class="row">
+                    <div class="col-1">
+                        <img class="gogLogo" style="width: 60px;height: 60px;" src="gog_logo.png" alt="">
+                    </div>
+                    <div class="col-7" style="color: grey;">
+                        <span>Language:</span>
+                        <a class="active" href="#">English</a>
+                        <a href="#">Deutsch</a>
+                        <a href="#">Français</a>
+                        <a href="#">Polski</a>
+                        <a href="#">Russian</a>
+                        <a href="#">Chinese</a>
+                        <br>
+                        <span>Currency:</span>
+                        <a class="active" href="#">USD</a>
+                    </div>
+                    <div class="col-4">
+                        <img id="gogGalaxyFooter" src="GOGGALAXY.png" style="width: 900px; height: 50px;" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>  --> 
+        <div id="footer-bottom" class="container-fluid bg-dark">
+            <div class="container mb-4 footer-top-bottom bg-dark">
+                <div class="row">
+                    <div class="col-8">
+                        <a href="#">Legal</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Our thanks</a>
+                        <br>
+                        <p>&copy; GOG sp. z o.o. All rights reserved. All trademarks and registered trademarks are the
+                            property of their respective owners.</p>
+                    </div>
+                    <div class="col-4">
+                        Part of <img class="mx-3" id="cdprojektLogo"
+                            src="PinClipart.com_eclipse-arm-development_355596.png" alt=""> group.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-
-    
 </body>
 </html>
